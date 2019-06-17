@@ -1,0 +1,13 @@
+version: '2'
+services:
+  proxy:
+    image: navikt/syfoproxy:a727eaa3e227b1c95f181c10c238b159cb1d4a5c
+    ports:
+      - "8080:80"
+    volumes:
+      - ".:/var/run/secrets/nais.io/vault"
+    depends_on:
+      - syfotekster
+  syfotekster:
+    build: .
+    
