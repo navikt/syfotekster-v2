@@ -31,4 +31,5 @@ spec:
     max: 2
     cpuThresholdPercentage: 90
   ingresses:
-    - "https://syfotekster-v2.nais.oera-q.local"
+    - "https://syfotekster-v2.nais.preprod.local"
+    - "https://syfotekster-v2.nais.adeo.local"
