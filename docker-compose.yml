@@ -1,7 +1,7 @@
 version: '2'
 services:
   proxy:
-    image: navikt/syfoproxy:a727eaa3e227b1c95f181c10c238b159cb1d4a5c
+    image: navikt/syfoproxy:latest
     ports:
       - "8080:80"
     volumes:
@@ -10,4 +10,3 @@ services:
       - syfotekster
   syfotekster:
     build: .
-    
