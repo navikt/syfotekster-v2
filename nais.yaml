@@ -6,7 +6,7 @@ metadata:
   labels:
     team: teamsykefravr
 spec:
-  image: repo.adeo.no:5443/syfo/syfotekster-v2:{{VERSION}}
+  image: repo.adeo.no:5443/syfo/syfotekster-v2:{{version}}
   port: 80
   team: teamsykefravr
   liveness:
