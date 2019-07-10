@@ -6,7 +6,7 @@ metadata:
   labels:
     team: teamsykefravr
 spec:
-  image: repo.adeo.no:5443/syfo/syfotekster-v2:{{version}}
+  image: navikt/syfotekster-v2:{{version}}
   port: 80
   team: teamsykefravr
   liveness:
@@ -21,11 +21,11 @@ spec:
     timeout: 1
   resources:
     limits:
-      cpu: 500m
-      memory: 256Mi
+      cpu: 100m
+      memory: 128Mi
     requests:
       cpu: 50m
-      memory: 128Mi
+      memory: 64Mi
   replicas:
     min: 1
     max: 2
